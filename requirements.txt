@@ -13,3 +13,4 @@ ipywidgets
 pytest
 scipy
 wordcloud
+pandas-stubs

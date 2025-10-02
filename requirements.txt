@@ -14,3 +14,4 @@ pytest
 scipy
 wordcloud
 pandas-stubs
+keras

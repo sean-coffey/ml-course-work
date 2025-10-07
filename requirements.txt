@@ -18,3 +18,7 @@ keras
 tifffile
 scikit-image
 tensorflow
+tensorflow-io
+tensorflow-macos
+tensorflow-metal
+sentencepiece

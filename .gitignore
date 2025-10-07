@@ -2,3 +2,7 @@
 /.venv/
 /figs/
 /histopathologic-cancer-detection/
+/preprocessed/
+/outputs/
+/nlp-getting-started/
+

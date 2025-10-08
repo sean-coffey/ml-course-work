@@ -6,7 +6,7 @@ import re
 import string
 from collections import defaultdict
 
-def clean(tweet):
+def clean_tweet(tweet):
     # Special characters
     tweet = re.sub(r"\x89Û_", "", tweet)
     tweet = re.sub(r"\x89ÛÒ", "", tweet)
@@ -752,40 +752,3 @@ def clean(tweet):
 
     return tweet
 
-
-def vanilla_clean(text):
-    """
-    Clean text data for NLP processing.
-
-    Args:
-        text (str): Raw text to clean
-
-    Returns:
-        str: Cleaned text
-    """
-    # Your clean function implementation here
-    # Example cleaning steps:
-
-    # Convert to lowercase
-    text = text.lower()
-
-    # Remove URLs
-    text = re.sub(r'http\S+|www\S+|https\S+', '', text, flags=re.MULTILINE)
-
-    # Remove user mentions and hashtags
-    text = re.sub(r'@\w+|#\w+', '', text)
-
-    # Remove punctuation
-    text = text.translate(str.maketrans('', '', string.punctuation))
-
-    # Remove extra whitespace
-    text = ' '.join(text.split())
-
-    return text
-
-
-# Add any other preprocessing functions here
-def remove_stopwords(text, stopwords_list):
-    """Remove stopwords from text."""
-    words = text.split()
-    return ' '.join([word for word in words if word not in stopwords_list])

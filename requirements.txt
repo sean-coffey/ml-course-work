@@ -21,4 +21,7 @@ tensorflow
 tensorflow-io
 tensorflow-macos
 tensorflow-metal
-sentencepiece
+
+librosa
+audiomentations
+soundfile
